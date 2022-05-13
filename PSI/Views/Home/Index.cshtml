@@ -86,22 +86,14 @@
                 slotLabelFormat: {
                     hour: '2-digit',
                     minute: '2-digit',
-                    //omitZeroMinute: true,
-                    //meridiem : 'long'
                 },
                 fixedWeekCount: true,
                 showNonCurrentDates: false,
-                //handleWindowResize: true,
-                //windowResizeDelay: 1000,
-                //windowResize: function (view) {
-                //    alert('Takvim yeniden boyutlandırıldı.');
-                //},
                 contentHeight: 650,
                 //aspectRatio: 5,
                 defaultView: 'dayGridMonth',
                 weekends: true,
                 allDaySlot: false,
-                //firstDay : 0, // Pazardan başlayacak şekilde 0, 1, 2 ..
                 titleFormat: {
                     year: 'numeric',
                     month: 'long',
@@ -121,12 +113,6 @@
                         buttonText: '4 Gün'
                     }
                 },
-                //buttonText: {
-                //    today: 'Bugün gün',
-                //    month: 'Ay ve ay',
-                //    week: 'Haftalr haf',
-                //    day : 'Gün güb'
-                //}
                 customButtons: {
                     addEvent: {
                         text: 'Ekle',
@@ -241,7 +227,7 @@
                     console.log('Recieve methodu tetiklendi.');  //draggedEl, event
                 },
                 eventLeave: function (info) {
-                    console.log('Leave edildi.');  //Takvimler arasında olaylar sürüklendiğinde çalışır
+                    console.log('Leave edildi.'); 
                 },
                 dropAccept : '#isValid'
 
